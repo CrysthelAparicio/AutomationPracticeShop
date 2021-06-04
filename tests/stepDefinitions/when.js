@@ -131,7 +131,7 @@ When(/^the user must choose the method of payment$/, function () {
 })
 
 When(/^user will be able to see the status of the completed order$/, function () {
-  cartPage.OrderConfirmation()
+  cartPage.OrderConfirmationAssertion()
   browser.pause(1000)
   loginPage.SignOutClick()
   loginPage.HomeLogo.waitForDisplayed()

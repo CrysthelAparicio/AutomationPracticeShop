@@ -5,11 +5,12 @@ Feature: Technical Test
     either create a new account or sign in. User A searches for all the dresses, and selects all
     since all were really affordable. User A proceeds to order and checkout its order. ”
 
-    #Scenario: User should be able to login to the application
-        #Given as an existing customer navigates to application home page
-        #When user logs into the application with his credentials
-        #Then the user should be able to view his account page
-        #And view the sign out option
+    ####### ---> If you want to execute only login, you must comment the sign up one. <--- #####
+    # Scenario: User should be able to login to the application
+    #     Given as an existing customer navigates to application home page
+    #     When user logs into the application with his credentials
+    #     Then the user should be able to view his account page
+    #     And view the sign out option
 
     Scenario: New user can create account with minimal data provided
        Given as an existing customer navigates to application home page

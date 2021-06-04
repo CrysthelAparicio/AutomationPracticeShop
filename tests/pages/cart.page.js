@@ -249,10 +249,10 @@ class CartPage {
         expect(this.PaymentBox.isDisplayed()).to.be.true
     }
 
-    OrderConfirmation() {
-        expect(this.OrderConfirmation.getText()).to.equal('$')
+    OrderConfirmationAssertion() {
+        expect(this.OrderConfirmation.getText()).to.equal('ORDER CONFIRMATION')
         this.PaymentOrderConfirmation.waitForDisplayed()
-        expect(this.PaymentAmount.getText()).to.contain()
+        expect(this.PaymentAmount.getText()).to.contain('$')
     }
 }
 
